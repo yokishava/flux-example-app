@@ -70,7 +70,7 @@ spec:
         timeout: 30s
         metadata:
           type: bash
-          cmd: "curl -sd 'test' http://hoge-canary:80/token | grep token"
+          cmd: "curl -sd 'test' http://hoge-canary.hoge:80/token | grep token"
       - name: load-test
         url: http://flagger-loadtester.hoge/
         timeout: 5s
