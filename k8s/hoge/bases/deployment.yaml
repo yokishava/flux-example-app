@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hoge-go
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hoge-go
