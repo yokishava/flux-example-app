@@ -17,7 +17,7 @@ spec:
           image: gcr.io/wakashiyo-playground/hoge-go
           resources:
             limits:
-              memory: "50Mi"
-              cpu: "50m"
+              memory: "20Mi"
+              cpu: "20m"
           ports:
             - containerPort: 80
