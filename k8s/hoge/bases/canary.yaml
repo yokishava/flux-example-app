@@ -70,9 +70,9 @@ spec:
         timeout: 30s
         metadata:
           type: bash
-          cmd: "curl http://hoge-go-canary.hoge:80/hoge"
+          cmd: "curl http://hoge-go-canary.hoge.svc.cluster.local:80"
       - name: load-test
         url: http://flagger-loadtester.test/
         timeout: 5s
         metadata:
-          cmd: "hey -z 1m -q 10 -c 2 http://hoge-go-canary.hoge:80/"
+          cmd: "hey -z 1m -q 10 -c 2 http://hoge-go-canary.hoge.svc.cluster.local:80/"
