@@ -1,0 +1,7 @@
+namespace: hoge
+resources:
+  - namespace.yaml
+  - gateway.yaml
+  - virtualsvc.yaml
+  - deployment.yaml
+  - service.yaml

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hoge-go
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hoge-go
+  template:
+    metadata:
+      labels:
+        app: hoge-go
+    spec:
+      containers:
+        - name: hoge-go
+          image: gcr.io/wakashiyo-playground/hoge-go
+          resources:
+            limits:
+              memory: "50Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 80
