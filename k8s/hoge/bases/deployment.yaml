@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hoge-go
-          image: gcr.io/wakashiyo-playground/hoge-go:0.0.3
+          image: gcr.io/wakashiyo-playground/hoge-go:0.0.4
           resources:
             limits:
               memory: "20Mi"
